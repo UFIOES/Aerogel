@@ -12,8 +12,8 @@ GameObjects
 			
 			Script
 			{
-				file = "Scripts/AerogelMaterial.lua"
-				class = "AerogelMaterial"
+				file = "Scripts/AerogelMaterialSnake.lua"
+				class = "AerogelMaterialSnake"
 				arguments
 				{
 					encumbrance = 1
@@ -28,6 +28,8 @@ GameObjects
 				Diffuse
 				{
 					"Cube" = "Models/PlaceableObjects/AerogelBlue.png"
+					"Blue" = "Models/PlaceableObjects/AerogelBlue.png"
+					"Green" = "Models/PlaceableObjects/AerogelGreen.png"
 				}
 
 			}

@@ -28,6 +28,8 @@ GameObjects
 				Diffuse
 				{
 					"Cube" = "Models/PlaceableObjects/AerogelWhite.png"
+					"White" = "Models/PlaceableObjects/AerogelWhite.png"
+					"Gold" = "Models/PlaceableObjects/AerogelGold.png"
 				}
 
 			}

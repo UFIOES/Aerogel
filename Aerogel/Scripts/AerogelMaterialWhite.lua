@@ -61,6 +61,12 @@ function AerogelMaterialWhite:Activate(dir)
 	if not dir then return end
 	self:NKEnableScriptProcessing(true, 250)
 	self.dir = dir
+	self:NKGetStaticGraphics():NKSetSubmeshTexture("Diffuse", "Cube", "Gold")
+end
+
+function AerogelMaterial:Deactivate()
+	self:NKEnableScriptProcessing(false)
+	self:NKGetStaticGraphics():NKSetSubmeshTexture("Diffuse", "Cube", "White")
 end
 
 function AerogelMaterialWhite:Update(dt)

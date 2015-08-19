@@ -1,0 +1,12 @@
+Aerogel Keybinds
+	{
+		Snake Aerogel Controls
+		{
+			KEYPAD 8 = "North"
+			KEYPAD 2 = "South"
+			KEYPAD 6 = "East"
+			KEYPAD 4 = "West"
+			KEYPAD 5 = "Up"
+			KEYPAD 3 = "Down"
+		}
+	}

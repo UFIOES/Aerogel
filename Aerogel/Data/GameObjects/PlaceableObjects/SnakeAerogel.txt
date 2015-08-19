@@ -3,7 +3,7 @@ GameObjects
 {
 	PlaceableObjects
 	{
-		Aerogel
+		SnakeAerogel
 		{
 			
 			Transform
@@ -57,7 +57,7 @@ GameObjects
 
 			Placeable
 			{
-				name = "Aerogel"
+				name = "Snake Aerogel"
 				icon = "GreenGel"
 
 				minScale = 1.0
