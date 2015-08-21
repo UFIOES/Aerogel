@@ -8,5 +8,7 @@ Aerogel Keybinds
 			KEYPAD 4 = "West"
 			KEYPAD 5 = "Up"
 			KEYPAD 3 = "Down"
+			KEYPAD 0 = "Lock Active"
+			KEYPAD 1 = "Deactivate All"
 		}
 	}

@@ -30,6 +30,7 @@ GameObjects
 					"Cube" = "Models/PlaceableObjects/AerogelBlue.png"
 					"Blue" = "Models/PlaceableObjects/AerogelBlue.png"
 					"Green" = "Models/PlaceableObjects/AerogelGreen.png"
+					"Locked" = "Models/PlaceableObjects/AerogelGreenG.png"
 				}
 
 			}

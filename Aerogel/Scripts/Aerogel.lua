@@ -39,6 +39,8 @@ function Aerogel:Enter()
 		self.player.m_defaultInputContext:NKRegisterNamedCommand("West", self, "SnakeWest", 0.25)
 		self.player.m_defaultInputContext:NKRegisterNamedCommand("Up", self, "SnakeUp", 0.25)
 		self.player.m_defaultInputContext:NKRegisterNamedCommand("Down", self, "SnakeDown", 0.25)
+		self.player.m_defaultInputContext:NKRegisterNamedCommand("Lock Active", self, "LockActive", KEY_ONCE)
+		self.player.m_defaultInputContext:NKRegisterNamedCommand("Deactivate All", self, "DeactivateAll", KEY_ONCE)
 
 		self.isKeyBound = true
 
@@ -63,6 +65,8 @@ function Aerogel:Process(dt)
 		self.player.m_defaultInputContext:NKRegisterNamedCommand("West", self, "SnakeWest", 0.25)
 		self.player.m_defaultInputContext:NKRegisterNamedCommand("Up", self, "SnakeUp", 0.25)
 		self.player.m_defaultInputContext:NKRegisterNamedCommand("Down", self, "SnakeDown", 0.25)
+		self.player.m_defaultInputContext:NKRegisterNamedCommand("Lock Active", self, "LockActive", KEY_ONCE)
+		self.player.m_defaultInputContext:NKRegisterNamedCommand("Deactivate All", self, "DeactivateAll", KEY_ONCE)
 
 		self.isKeyBound = true
 
@@ -80,6 +84,24 @@ end
 
 function Aerogel:LocalPlayerReady(player)
 	self.player = player
+end
+
+function Aerogel:DeactivateAll(down)
+	if not down then return end
+
+	NKPrint("HEY")
+
+	EventSystem:NKBroadcastEventToClass("Deactivate", "AerogelMaterialSnake", {force = true})
+
+	EventSystem:NKBroadcastEventToClass("Deactivate", "AerogelMaterialWhite", {})
+
+end
+
+function Aerogel:LockActive(down)
+	if not down then return end
+
+	EventSystem:NKBroadcastEventToClass("ToggleActiveLock", "AerogelMaterialSnake", {})
+
 end
 
 function Aerogel:SnakeNorth(down)

@@ -15,7 +15,7 @@ function AerogelMaterial:Activate()
 	self:NKEnableScriptProcessing(true, 250)
 end
 
-function AerogelMaterial:Deactivate()
+function AerogelMaterial:Deactivate(args)
 	self:NKEnableScriptProcessing(false)
 end
 

@@ -4,6 +4,7 @@ include("Scripts/Aerogel.lua")
 -------------------------------------------------------------------------------
 if AerogelMaterialWhite == nil then
 	AerogelMaterialWhite = AerogelMaterial.Subclass("AerogelMaterialWhite")
+	AerogelMaterialWhite.RegisterScriptEvent("Deactivate", {})
 end
 
 function AerogelMaterialWhite:Constructor(args)
@@ -64,7 +65,7 @@ function AerogelMaterialWhite:Activate(dir)
 	self:NKGetStaticGraphics():NKSetSubmeshTexture("Diffuse", "Cube", "Gold")
 end
 
-function AerogelMaterial:Deactivate()
+function AerogelMaterial:Deactivate(args)
 	self:NKEnableScriptProcessing(false)
 	self:NKGetStaticGraphics():NKSetSubmeshTexture("Diffuse", "Cube", "White")
 end
