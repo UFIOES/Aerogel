@@ -24,7 +24,7 @@ end
  -------------------------------------------------------------------------------
  -- Called once from C++ at engine initialization time
 function Aerogel:Initialize()
-	--Eternus.CraftingSystem:ParseRecipeFile("Data/Crafting/Aerogel_crafting.txt")
+	Eternus.CraftingSystem:ParseRecipeFile("Data/Crafting/Aerogel_crafting.txt")
 end
 
 -------------------------------------------------------------------------------

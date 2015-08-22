@@ -1,0 +1,112 @@
+All Recipes
+{
+	Snake Aerogel Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			priority = 2.0
+			Components
+			{
+				Color
+				{
+					"Green Dye" = 1
+				}
+
+				Shard
+				{
+					"Peridot Shard" = 1
+				}
+			}
+			
+			Results
+			{
+				"SnakeAerogel" = 1
+			}
+
+			Crafting Stations
+			{
+				Alchemy Table
+				{
+					craftTime 10.0
+					energyCost = 25.0
+				}				
+			}
+		}
+	}
+	
+	White Aerogel Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			priority = 2.0
+			Components
+			{
+				Color
+				{
+					"White Dye" = 1
+				}
+
+				Shard
+				{
+					"Citrine Shard" = 1
+				}
+			}
+			
+			Results
+			{
+				"WhiteAerogel" = 1
+			}
+
+			Crafting Stations
+			{
+				Alchemy Table
+				{
+					craftTime 10.0
+					energyCost = 25.0
+				}				
+			}
+		}
+	}
+
+	Black Aerogel Recipe
+	{	
+		Script = "Scripts/Recipes/DefaultRecipe.lua"
+		
+		LuaData
+		{
+			priority = 2.0
+			Components
+			{
+				Color
+				{
+					"Black Dye" = 1
+				}
+
+				Shard
+				{
+					"Amethyst Shard" = 1
+				}
+			}
+			
+			Results
+			{
+				"BlackAerogel" = 1
+			}
+
+			Crafting Stations
+			{
+				Alchemy Table
+				{
+					craftTime 10.0
+					energyCost = 25.0
+				}				
+			}
+		}
+	}
+
+
+}

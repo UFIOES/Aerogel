@@ -46,8 +46,8 @@ function AerogelMaterialBlack:Update(dt)
 
 		Eternus.PhysicsWorld:NKSetMaxQueryResults(1000)
 
-		local collMin = vec3(pos - vec3.new(0.49,0.49,0.49))
-		local collMax = vec3(pos + vec3.new(0.49,0.49,0.49))
+		local collMin = vec3(pos - vec3.new(0.25,0.25,0.25))
+		local collMax = vec3(pos + vec3.new(0.25,0.25,0.25))
 
 		local collCenter= vec3(collMin + collMax)*vec3.new(0.5,0.5,0.5)
 
