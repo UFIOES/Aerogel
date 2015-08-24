@@ -8,7 +8,7 @@ end
 
 function AerogelMaterial:Constructor(args)
 	self.delay = 1
-	self.geltype = "AerogelGreen"
+	self.geltype = "Aerogel"
 end
 
 function AerogelMaterial:Activate()
@@ -27,7 +27,7 @@ function AerogelMaterial:Interact(args)
 
 		self:NKRemoveFromWorld(false, true)
 
-		local gel = Eternus.GameObjectSystem:NKCreateNetworkedGameObject("AerogelRed", true, true):NKGetInstance()
+		local gel = Eternus.GameObjectSystem:NKCreateNetworkedGameObject("AerogelMatRed", true, true):NKGetInstance()
 
 		gel:NKSetPosition(self:NKGetPosition())
 

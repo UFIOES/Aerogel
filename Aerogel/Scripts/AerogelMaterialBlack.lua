@@ -7,7 +7,7 @@ end
 
 function AerogelMaterialBlack:Constructor(args)
 
-	self.geltype = "AerogelBlack"
+	self.geltype = "AerogelMatBlack"
 
 	self.delay = 0.1
 

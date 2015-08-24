@@ -6,7 +6,7 @@ if AerogelMaterialRed == nil then
 end
 
 function AerogelMaterialRed:Constructor(args)
-	self.geltype = "AerogelRed"
+	self.geltype = "AerogelMatRed"
 
 	self.materialID = NKTerrainGetMaterialID("Mesa Rock")
 

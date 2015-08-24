@@ -3,7 +3,7 @@ GameObjects
 {
 	PlaceableObjects
 	{
-		AerogelWhite
+		AerogelMatRed
 		{
 			
 			Transform
@@ -12,8 +12,8 @@ GameObjects
 			
 			Script
 			{
-				file = "Scripts/AerogelMaterialWhite.lua"
-				class = "AerogelMaterialWhite"
+				file = "Scripts/AerogelMaterialRed.lua"
+				class = "AerogelMaterialRed"
 				arguments
 				{
 					encumbrance = 1
@@ -27,9 +27,7 @@ GameObjects
 				
 				Diffuse
 				{
-					"Cube" = "Models/PlaceableObjects/AerogelWhite.png"
-					"White" = "Models/PlaceableObjects/AerogelWhite.png"
-					"Gold" = "Models/PlaceableObjects/AerogelGold.png"
+					"Cube" = "Models/PlaceableObjects/AerogelRed.png"
 				}
 
 			}
@@ -59,8 +57,8 @@ GameObjects
 
 			Placeable
 			{
-				name = "AerogelWhite"
-				icon = "WhiteGel"
+				name = "Red Aerogel"
+				icon = "RedGel"
 
 				minScale = 1.0
 				maxScale = 1.0
@@ -76,7 +74,7 @@ GameObjects
 				
 				damageToCharacters = 0.0
 				damageToObjects = 0.0
-				maxStackCount = 512
+				maxStackCount = 1
 				weaponRange = 7.0
 
 			}

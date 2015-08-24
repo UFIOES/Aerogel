@@ -7,11 +7,21 @@ end
 
 function AerogelObject:Constructor(args)
 	self.geltype = args.geltype
+
+	self.modificationInput = {
+		modificationType = EternusEngine.Terrain.EVoxelOperations.ePlace, --found in common.lua
+		dimensions = vec3.new(1.0,1.0,1.0), --Only needed for cubes and rounded cubes
+		radius = 1.0, --Only needed for spheres
+		brushType = EternusEngine.Terrain.EVoxelBrushShapes.eCube, --found in common.lua
+	}
+
+	self.m_showVoxelSelectionBox = true
+
 end
 
 function AerogelObject:SecondaryAction(args)
 
-	if not args.camManifold then return end
+	if not args.camManifold then return true end
 
 	-- The resulting truncated position
 	local tpp = EternusEngine.Terrain:TruncatePosition(args.camManifold.point, args.camManifold.normal, vec3.new(1.0, 1.0, 1.0), NKTerrain.EVoxelOperations.ePlace)
@@ -51,6 +61,10 @@ function AerogelObject:SecondaryAction(args)
 
 	return true
 
+end
+
+function AerogelObject:GetModificationType()
+	return self.modificationInput.modificationType
 end
 
 EntityFramework:RegisterGameObject(AerogelObject)

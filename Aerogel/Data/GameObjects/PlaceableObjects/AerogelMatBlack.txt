@@ -3,7 +3,7 @@ GameObjects
 {
 	PlaceableObjects
 	{
-		AerogelBlack
+		AerogelMatBlack
 		{
 			
 			Transform
@@ -57,7 +57,7 @@ GameObjects
 
 			Placeable
 			{
-				name = "AerogelBlack"
+				name = "Black Aerogel"
 				icon = "BlackGel"
 
 				minScale = 1.0
@@ -74,7 +74,7 @@ GameObjects
 				
 				damageToCharacters = 0.0
 				damageToObjects = 0.0
-				maxStackCount = 512
+				maxStackCount = 1
 				weaponRange = 7.0
 
 			}

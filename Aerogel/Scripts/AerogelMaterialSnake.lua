@@ -9,9 +9,8 @@ if AerogelMaterialSnake == nil then
 	AerogelMaterialSnake.RegisterScriptEvent("Deactivate", {force = "boolean"})
 end
 
-function AerogelMaterial:AerogelMaterialSnake(args)
-	self.delay = 1
-	self.geltype = "AerogelGreen"
+function AerogelMaterialSnake:Constructor(args)
+	self.geltype = "AerogelMatSnake"
 	self.active = false
 	self.activeLock = false
 end
@@ -33,6 +32,7 @@ end
 function AerogelMaterialSnake:Deactivate(args)
 	if self.activeLock and not (args and args.force) then return end
 	self.active = false
+	self.activeLock = false
 	self:NKGetStaticGraphics():NKSetSubmeshTexture("Diffuse", "Cube", "Blue")
 end
 

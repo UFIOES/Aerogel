@@ -3,7 +3,7 @@ GameObjects
 {
 	PlaceableObjects
 	{
-		BlackAerogel
+		Black Aerogel
 		{
 			
 			Transform
@@ -16,7 +16,7 @@ GameObjects
 				class = "AerogelObject"
 				arguments
 				{
-					geltype = "AerogelBlack"
+					geltype = "AerogelMatBlack"
 				}
 			}
 
@@ -69,7 +69,7 @@ GameObjects
 				tier = 1
 				damageToCharacters = 0.0
 				damageToObjects = 0.0
-				maxStackCount = 512
+				maxStackCount = 1
 				weaponRange = 7.0
 
 			}

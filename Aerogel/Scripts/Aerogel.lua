@@ -89,8 +89,6 @@ end
 function Aerogel:DeactivateAll(down)
 	if not down then return end
 
-	NKPrint("HEY")
-
 	EventSystem:NKBroadcastEventToClass("Deactivate", "AerogelMaterialSnake", {force = true})
 
 	EventSystem:NKBroadcastEventToClass("Deactivate", "AerogelMaterialWhite", {})
